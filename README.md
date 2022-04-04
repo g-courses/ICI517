@@ -1,6 +1,6 @@
 # ICI517 - Programación de Alto Desempeño
 
-##Evaluación:
+## Evaluación:
 
 * Certamen 1: 20% (presencial)
 * Certamen 2: 30% (presencial)
