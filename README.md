@@ -4,7 +4,7 @@
 
 * Certamen 1: 20% (presencial)
 * Certamen 2: 30% (presencial)
-* Controles: 20% (no presencial)
+* [Controles](https://github.com/g-courses/ICI517/tree/main/controles): 20% (no presencial)
 * Tareas: 30% (no presencial)
 
 ## Fechas certámenes 
