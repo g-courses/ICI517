@@ -26,7 +26,9 @@ El trabajo de realizar se dividirá principalmente en las siguientes etapas.
 
 ![](https://github.com/UV-ramos/ICI517-tarea01/blob/main/code/graph-example/example.png?raw=true)
 
-La variable de entrada en este caso en la cantidad de iteraciones (**nt**) y la variable parámetrica es el tamaño del problema (**nx**). Se realizaron experimentos con nt={10·10<sup>3</sup>, ..., 50·10<sup>3</sup>} y por cada uno se hizo variar el tamaño del problema con nx={15·10<sup>3</sup>, 30·10<sup>3</sup>, 45·10<sup>3</sup>, 60·10<sup>3</sup>}. En el directorio [code/graph-example](https://github.com/UV-ramos/ICI517-tarea01/tree/main/code/graph-example) está el código que permite obtener este gráfico con GnuPlot.
+La variable de entrada en este caso en la cantidad de iteraciones (**nt**) y la variable parámetrica es el tamaño del problema (**nx**). Se realizaron experimentos con nt={10·10<sup>3</sup>, ..., 50·10<sup>3</sup>} y por cada uno se hizo variar el tamaño del problema con nx={15·10<sup>3</sup>, 30·10<sup>3</sup>, 45·10<sup>3</sup>, 60·10<sup>3</sup>}. 
+
+En el directorio [graph-examples](https://github.com/g-courses/ICI517/tree/main/tareas/tarea01/graph-examples) está el código que permite obtener este gráfico con GnuPlot.
 
 4. Usted debe preparar un informe del trabajo realizado, utilizando la plantilla entregada ```plantilla-informe.dotx```. El código de su trabajo deberá ser copiado en el directorio ```/projects/$USER/tarea01``` para su revisión. La estructura de este directorio debe ser:
 
