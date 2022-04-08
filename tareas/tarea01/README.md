@@ -8,7 +8,26 @@ Miércoles 20 de Abril, 18:00 horas.
 
 ## Descripción del trabajo a realizar
 
-En el directorio ```experiments-data``` hay archivos de texto con nombre ```timeExec-Nth.txt```, donde N={1,2,4,8} indica la cantidad de threads utilizados en dicho experimento.
+Para caracterizar el comportamiento de un programa, se hacen una serie de experimentos que consisten en los siguientes pasos:
+
+```
+Sea T={1,2,4,8} el número de threads a utilizar.
+Sea S={10,20,30,40,50,60,70,80,90} el tamaño del problema en MB.
+
+Para cada T :
+	Para cada S :
+		Ejecute el programa con T threads y con tamaño de problema S.
+		Mida el tiempo de ejecución.
+		Mida la cantidad de memoria utilizada.
+		Agregue estos datos a un archivo con nombre ```timeExec-Tth.txt```
+	Fin Para cada S
+Fin Para cada T
+		
+```
+
+
+
+En el directorio ```experiments-data``` hay archivos de texto con nombre ```timeExec-Nth.txt```, donde N={1,2,4,8} indica la cantidad de threads utilizados en dicho experimento. Cada archivo contiene 
 
 En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
  
