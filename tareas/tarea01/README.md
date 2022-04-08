@@ -47,9 +47,7 @@ Usted debe implementar un script en GnuPlot que sea capaz de generar los gráfic
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/03-eficiencia.png)
 
-Debe utilizar como base el script que se encuentra en ``code/comparacion.plt```.
-
-En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
+Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```. Además, En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
  
  
 
