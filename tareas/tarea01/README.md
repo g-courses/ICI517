@@ -47,9 +47,25 @@ Usted debe implementar un script en GnuPlot que sea capaz de generar los gráfic
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/03-eficiencia.png)
 
-Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```. Además, En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
- 
- 
+Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```. Además, En el directorio [graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
 
-4. Usted debe preparar un informe del trabajo realizado, utilizando la plantilla entregada ```plantilla-informe.dotx```. El código de su trabajo deberá ser copiado en XXXXX. El informe deberá subirlo al Aula Virtual, y el nombre del archivo debera ser: ```Apellido1-Apellido2-Nombre.pdf```.
+El script realizado se deberá subir al Aula Virtual. El nombre del script deberá ser el siguiente: ```Apellido1-Apellido2-Nombre.plt```. No se corregirán scripts con otro nombre.
+ 
+## Forma de corregir
+
+Cada script se ejecutará en consola, en el directorio ```code```, donde se verificará la creación de los tres gráficos solicitados. Ejemplo:
+
+```
+$ cd code
+$ ./flores-delcampo-zacarias.plt
+[...] se omiten warnings
+$ ls -l 
+-rw-r--r--@ 1 user  staff  17163 Apr  7 22:25 01-texec.png
+-rw-r--r--@ 1 user  staff   7505 Apr  7 22:25 02-speedup.png
+-rw-r--r--@ 1 user  staff   8924 Apr  7 22:25 03-eficiencia.png
+-rwxr--r--@ 1 user  staff   2273 Apr  7 22:25 comparacion.plt
+drwxr-xr-x@ 7 user  staff    224 Apr  7 21:43 experiments-data
+```
+
+Cada gráfico después de revisa en forma individual para evaluar su cercanía al gráfico solicitado.
 
