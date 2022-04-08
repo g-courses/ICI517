@@ -6,7 +6,7 @@ El objetivo de la tarea es introducir el uso de la herramienta [gnuplot](http://
 
 Miércoles 20 de Abril, 18:00 horas.
 
-## Descripción del trabajo a realizar
+## Antecedentes
 
 Para caracterizar el comportamiento de un programa, se hacen una serie de experimentos cuyo diseño es el siguiente:
 
@@ -21,13 +21,16 @@ Para cada T :
 		Mida la cantidad de memoria utilizada.
 		Agregue estos datos a un archivo con nombre ```timeExec-Tth.txt```
 	Fin Para cada S
-Fin Para cada T
-		
+Fin Para cada T	
 ```
 
+## Descripción del trabajo a realizar
 
+En el directorio ```experiments-data``` hay archivos de texto con nombre ```timeExec-Tth.txt```, donde T={1,2,4,8} indica la cantidad de threads utilizados en dicho experimento. Cada archivo contiene registros con la siguiente estructura:
 
-En el directorio ```experiments-data``` hay archivos de texto con nombre ```timeExec-Nth.txt```, donde N={1,2,4,8} indica la cantidad de threads utilizados en dicho experimento. Cada archivo contiene 
+```
+size_problem:threads_used:t_ejec_1th:t_ejec_4th:memory_used
+
 
 En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
  
