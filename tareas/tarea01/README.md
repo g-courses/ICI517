@@ -10,20 +10,9 @@ Miércoles 20 de Abril, 18:00 horas.
 
 En el directorio ```experiments-data``` hay archivos de texto con nombre ```timeExec-Nth.txt```, donde N={1,2,4,8} indica la cantidad de threads utilizados en dicho experimento.
 
-En el directorio [code/graph-example](https://github.com/UV-ramos/ICI517-tarea01/tree/main/code/graph-example) está el código que permite obtener este gráfico con GnuPlot.
+En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
  
  
 
-4. Usted debe preparar un informe del trabajo realizado, utilizando la plantilla entregada ```plantilla-informe.dotx```. El código de su trabajo deberá ser copiado en el directorio ```/projects/$USER/tarea01``` para su revisión. La estructura de este directorio debe ser:
-
-```
-/projects/$USER/
-	+ tarea01/
-		+ code/
-			- Makefile
-			+ src/
-		- README.txt	
-```
-
-El archivo README.txt deberá contener una descripción de los directorios y de su contenido. El directorio ```src``` debe tener la misma estructura del que se encuentra en este repositorio. Recuerde que su código debe ser compilado con el comando ```make```. El informe deberá subirlo al Aula Virtual, y el nombre del archivo debera ser: ```Apellido1-Apellido2-Nombre.pdf```.
+4. Usted debe preparar un informe del trabajo realizado, utilizando la plantilla entregada ```plantilla-informe.dotx```. El código de su trabajo deberá ser copiado en XXXXX. El informe deberá subirlo al Aula Virtual, y el nombre del archivo debera ser: ```Apellido1-Apellido2-Nombre.pdf```.
 
