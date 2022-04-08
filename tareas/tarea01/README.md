@@ -1,6 +1,6 @@
 # Medición del tiempo de ejecución (timing) de un algoritmo
 
-El objetivo de la tarea es introducir el uso de la herramienta ![gnuplot](http://www.gnuplot.info) para realizar los gráficos de tiempos ejecución, acelaración y eficiencia. Para esto, se utilizarán datos ficticios para generar estos gráficos.
+El objetivo de la tarea es introducir el uso de la herramienta [gnuplot](http://www.gnuplot.info) para realizar los gráficos de tiempos ejecución, acelaración y eficiencia. Para esto, se utilizarán datos ficticios para generar estos gráficos.
 
 ## Plazo
 
