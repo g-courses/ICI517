@@ -8,7 +8,7 @@ Miércoles 20 de Abril, 18:00 horas.
 
 ## Descripción del trabajo a realizar
 
-Para caracterizar el comportamiento de un programa, se hacen una serie de experimentos que consisten en los siguientes pasos:
+Para caracterizar el comportamiento de un programa, se hacen una serie de experimentos cuyo diseño es el siguiente:
 
 ```
 Sea T={1,2,4,8} el número de threads a utilizar.
