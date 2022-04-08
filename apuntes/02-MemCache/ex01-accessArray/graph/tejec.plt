@@ -21,20 +21,13 @@ set key inside bottom right
 #set logscale y 2
 #set logscale x 2
 #set xrange [10:*]
+
 set yrange [1:*]
 set xtics 1
-
- 
 #set mytics 2
 #set format y "%.0f"
 
 set grid xtics ytics mxtics mytics
-
-TIME_SERIAL=1000
-y(x)=x
-
-#plot "datos.txt"  using 1:2 title "A"  with linespoints lt -1 pointtype 9 pointsize 1.3 dt 1 ,\
-#	"datos.txt" using 1:3 title "B"  with linespoints lt -1 pointtype 7 pointsize 1.3 dt 2 
 
 
 plot "datos.txt"  using 1:3 title ""  with linespoints lt -1 pointtype 11 pointsize 1.3 dt 1
