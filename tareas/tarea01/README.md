@@ -43,6 +43,11 @@ Usted debe implementar un script en GnuPlot que sea capaz de generar los gráfic
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/01-texec.png)
 
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/02-speedup.png)
+
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/02-eficiencia.png)
+
+
 
 En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
  
