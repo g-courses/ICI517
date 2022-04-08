@@ -49,7 +49,9 @@ Usted debe implementar un script en GnuPlot que sea capaz de generar los gráfic
 
 Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```. Además, En el directorio [graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
 
-El script realizado se deberá subir al Aula Virtual. El nombre del script deberá ser el siguiente: ```Apellido1-Apellido2-Nombre.plt```. No se corregirán scripts con otro nombre.
+## Entregables
+
+El script realizado se deberá subir al Aula Virtual. El nombre del script deberá ser el siguiente: ```Apellido1-Apellido2-Nombre.plt```. No se corregirán scripts con otro nombre. No hay necesidad de hacer un informe formal.
  
 ## Forma de corregir
 
