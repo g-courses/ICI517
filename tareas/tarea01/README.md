@@ -30,6 +30,14 @@ En el directorio ```experiments-data``` hay archivos de texto con nombre ```time
 
 ```
 size_problem:threads_used:t_ejec_1th:t_ejec_4th:memory_used
+```
+
+donde:
+* ```size_problem``` : Tamaño en MB de la prueba.
+* ```threads_used``` : Threads utilizados en el prueba.
+* ```t_ejec_1th``` : Tiempo de ejecución base (1 thread).
+* ```t_ejec_Tth``` : Tiempo de ejecución para T threads.
+* ```memory_used```: Cantidad de memoria utilizada en la prueba (KB)
 
 
 En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
