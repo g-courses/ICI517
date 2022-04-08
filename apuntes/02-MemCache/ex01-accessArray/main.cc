@@ -3,10 +3,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 //   Usage:
-//           ./program_name  .......
-//
-//   Description:
-//                ...................
+//           ./program_name  -N <size>
+//            
 //
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -34,33 +32,23 @@ int main(int argc, char** argv)
 	}
 	
 	sizeBytes = 1 << N;
-	//sizeBytes = N*1024;
 	numberElements = sizeBytes/sizeof(float);
 	
 	float* matrixExample = new float[ numberElements ];
 
-	//std::cout << "Size: " << (float)sizeBytes / (1024)<< " KBytes\n";
-	
-	timer1.start();
 	for(size_t i = 0; i < numberElements; i++ ){
 		matrixExample[i] += 1.0;
 	}
-	timer1.stop();
-	//std::cout << "Elapsed time in first for: " << timer1.elapsed<std::chrono::milliseconds>() << "ms\n";
-	
-	timer1.start();
-	int steps = 1024 * 1024 * 1024; // Arbitrary number of steps
 
+	int steps = 1024 * 1024 * 1024; // number of steps
 	int lengthMod = numberElements - 1;
 
+	timer1.start();
 	for (size_t i = 0; i < steps; i++) {
 		matrixExample[(i * 5) & lengthMod]++; // (x & lengthMod) is equal to (x % A.Length)
 		
 	}
-	
-	
 	timer1.stop();
-	//std::cout << "Elapsed time in second for: " << timer1.elapsed<std::chrono::milliseconds>() << "ms\n";
 	
 	std::cout << N << ":" << (float)sizeBytes / (1024) << "KB:" <<  timer1.elapsed<std::chrono::milliseconds>() << "\n";
 	
