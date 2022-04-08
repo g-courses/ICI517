@@ -45,7 +45,7 @@ Usted debe implementar un script en GnuPlot que sea capaz de generar los gráfic
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/02-speedup.png)
 
-![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/02-eficiencia.png)
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/03-eficiencia.png)
 
 
 
