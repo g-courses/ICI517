@@ -39,6 +39,9 @@ donde:
 
 ## Descripción del trabajo a realizar
 
+Usted debe implementar un script en GnuPlot que sea capaz de generar los gráficos que se encuentran en el directorio ```graph_target```:
+
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/01-texec.png)
 
 
 En el directorio [code/graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
