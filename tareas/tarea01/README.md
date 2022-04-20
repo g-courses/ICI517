@@ -4,7 +4,7 @@ El objetivo de la tarea es introducir el uso de la herramienta [gnuplot](http://
 
 ## Plazo
 
-Miércoles 20 de Abril, 18:00 horas.
+Miércoles 20 de Abril, 18:00 horas. Ver condiciones de entrega en la sección **Entregables**.
 
 ## Antecedentes
 
