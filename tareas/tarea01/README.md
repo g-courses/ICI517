@@ -52,7 +52,7 @@ Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```
 ## Entregables
 
 El script realizado se deberá subir al Aula Virtual. El nombre del script deberá ser el siguiente: ```Apellido1-Apellido2-Nombre.plt```. No se corregirán scripts con otro nombre. No hay necesidad de hacer un informe formal.
-**Aviso**: debido a que no todos pueden ingresar al Aula Virtual, esta tarea se entregará por correo. El título del correo debe ser : *[ICI517] Tarea #1 - Apellido1-Apellido2-Nombre* y *solo* debe adjunto el script GnuPlot con el nombre respectivo.
+**Aviso**: debido a que no todos pueden ingresar al Aula Virtual, esta tarea se entregará por correo. El título del correo **debe** ser : *[ICI517] Tarea #1 - Apellido1-Apellido2-Nombre* y *solo* debe adjunto el script GnuPlot con el nombre respectivo. Sólo se recepcionarán correos que cumplan con este requisito.
  
 ## Forma de corregir
 
