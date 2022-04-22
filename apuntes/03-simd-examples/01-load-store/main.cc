@@ -47,7 +47,6 @@ int main(int argc, char** argv)
 		std::cout << "dataMemoryOut["<< ii <<"] = ";
 		std::cout << dataMemoryOut[ii];
 		std::cout << std::endl;
-
 	}
 	
 
