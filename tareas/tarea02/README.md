@@ -47,6 +47,8 @@ En el directorio ```skel/base``` están los archivos que debe utilizar para inic
 * ```main.cc``` : Archivo fuente principal que debe modificar. 
 * ```MultMatrix.cc``` : Archivo fuente de implementación del objeto MultMatrix. 
 * ```MultMatrix.hh``` : Archivo fuente de declaración del objeto MultMatrix. 
+* ```run_experiments.sh``` : Script BASH para realizar los experimentos.
+* ```make_graphs.plt``` : Script GnuPLot para generar los gráficos de desempeño y comparación.
 
 Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
 
