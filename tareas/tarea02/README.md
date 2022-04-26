@@ -45,7 +45,7 @@ En el directorio ```skel/base``` están los archivos que debe utilizar para inic
 * ```include/``` : Bibliotecas no estándar utilizadas..
 * ```mult.cc``` : Archivo fuente que debe modificar. 
 
-Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato tar.gz según las indicaciones de la sección **Entregables**.
+Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
 
 
 ## Descripción del trabajo a realizar
@@ -53,7 +53,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 
 ## Entregables
 
-Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *[ICI517-PAD] Tarea #2 - Apellido1-Apellido2-Nombre* y debe adjuntar el informe y un archivo tar.gz que contengo el directorio de trabajo con sus respectivos . Sólo se recepcionarán correos que cumplan con este requisito.
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD] Tarea #2 - Apellido1-Apellido2-Nombre```* y debe adjuntar el informe y un archivo ```tar.gz``` que contengo el directorio de trabajo con sus respectivos . Sólo se recepcionarán correos que cumplan con este requisito.
  
 ## Forma de corregir
 
