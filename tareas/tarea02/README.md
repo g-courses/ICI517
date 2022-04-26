@@ -12,7 +12,7 @@ Para multiplicar matrices existen varios métodos. Los que se evaluarán en esta
 
 ### Método A (método ijk)
 
-![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea02/content/metodo01.png)
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea02/content/metodo01.png | width=100)
 
 ```
 for(size_t i=0; i < filas(a); i++){
