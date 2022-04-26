@@ -1,6 +1,6 @@
 # Impacto del uso de la memoria cache en la multiplicación de matrices
 
-El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices. Se utilizarán conjuntos de matrices *cuadradas* de distinto tamaño para evaluar los tiempo de ejecución.
+El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices. Se utilizarán conjuntos de matrices *cuadradas* de números en precisión simple de distinto tamaño para evaluar los tiempo de ejecución.
 
 ## Plazo
 
