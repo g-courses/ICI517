@@ -1,74 +1,71 @@
-# Generación de gráficos de caracterización de algoritmos
+# Impacto del uso de la memoria cache en la multiplicación de matrices
 
-El objetivo de la tarea es introducir el uso de la herramienta [gnuplot](http://www.gnuplot.info) para realizar los gráficos de tiempos ejecución, acelaración y eficiencia. Para esto, se utilizarán datos ficticios para generar estos gráficos.
+El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices.
 
 ## Plazo
 
-Miércoles 20 de Abril, 18:00 horas. Ver condiciones de entrega en la sección **Entregables**.
+Miércoles 11 de Mayo, 18:00 horas. Ver condiciones de entrega en la sección **Entregables**.
 
 ## Antecedentes
 
-Para caracterizar el comportamiento de un programa, se hacen una serie de experimentos cuyo diseño es el siguiente:
+Para multiplicar matrices existen varios métodos. Los que se evaluarán en esta tarea son dos. El anális teórico de la tasa de fallos de caché se realizó en clases.
+
+### Método A (método ijk)
+
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea02/content/metodo01.png)
 
 ```
-Sea T={1,2,4,8} el número de threads a utilizar.
-Sea S={10,20,30,40,50,60,70,80,90} el tamaño del problema en MB.
-
-Para cada T :
-	Para cada S :
-		Ejecute el programa con T threads y con tamaño de problema S.
-		Mida el tiempo de ejecución.
-		Mida la cantidad de memoria utilizada.
-		Agregue estos datos a un archivo con nombre ```timeExec-Tth.txt```
-	Fin Para cada S
-Fin Para cada T	
+for(size_t i=0; i < filas(a); i++){
+  for(size_t j=0; j < columnas(b); j++){
+    for(size_t k=0; k < columnas(a); k++){
+      c[i][j] += a[i][k] * b[k][j];
+    }			
+  }
+}
 ```
 
-En el directorio ```code/experiments-data``` están los archivos de texto generados por los experimentos. Cada archivo contiene registros con la siguiente estructura:
+### Método B (método kij)
+
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea02/content/metodo02.png)
 
 ```
-size_problem:threads_used:t_ejec_1th:t_ejec_4th:memory_used
+for(size_t k=0; k < columnas(a); k++){
+  for(size_t i=0; i < filas(a); i++){
+    float r = a[i][k]
+    for(size_t j=0; j < columnas(b); j++){
+       c[i][j] += r * b[k][j];
+    }			
+  }
+}
 ```
 
-donde:
-* ```size_problem``` : Tamaño en MB de la prueba.
-* ```threads_used``` : Threads utilizados en el prueba.
-* ```t_ejec_1th``` : Tiempo de ejecución base (1 thread).
-* ```t_ejec_Tth``` : Tiempo de ejecución para T threads.
-* ```memory_used```: Cantidad de memoria utilizada en la prueba (KB)
+En el directorio ```skel/base``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
+
+* ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
+* ```include/``` : Bibliotecas no estándar utilizadas..
+* ```mult.cc``` : Archivo fuente que debe modificar. 
+
+Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato tar.gz según las indicaciones de la sección **Entregables**.
+
 
 ## Descripción del trabajo a realizar
 
-Usted debe implementar un script en GnuPlot que sea capaz de generar los gráficos que se encuentran en el directorio ```graph_target```:
-
-![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/01-texec.png)
-
-![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/02-speedup.png)
-
-![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea01/graph-target/03-eficiencia.png)
-
-Debe utilizar como base el script que se encuentra en ```code/comparacion.plt```. Además, En el directorio [graphs-example](https://github.com/g-courses/ICI517/edit/main/tareas/tarea01/graph-examples) se encuentran ejemplos de uso de GnuPlot.
 
 ## Entregables
 
-El script realizado se deberá subir al Aula Virtual. El nombre del script deberá ser el siguiente: ```Apellido1-Apellido2-Nombre.plt```. No se corregirán scripts con otro nombre. No hay necesidad de hacer un informe formal.
-**Aviso**: debido a que no todos pueden ingresar al Aula Virtual, esta tarea se entregará por correo. El título del correo **debe** ser : *[ICI517-PAD] Tarea #1 - Apellido1-Apellido2-Nombre* y *solo* debe adjunto el script GnuPlot con el nombre respectivo. Sólo se recepcionarán correos que cumplan con este requisito.
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *[ICI517-PAD] Tarea #2 - Apellido1-Apellido2-Nombre* y debe adjuntar el informe y un archivo tar.gz que contengo el directorio de trabajo con sus respectivos . Sólo se recepcionarán correos que cumplan con este requisito.
  
 ## Forma de corregir
 
 Cada script se ejecutará en consola, en el directorio ```code```, donde se verificará la creación de los tres gráficos solicitados. Ejemplo:
 
 ```
-$ cd code
-$ ./flores-delcampo-zacarias.plt
-[...] se omiten warnings
-$ ls -l 
--rw-r--r--@ 1 user  staff  17163 Apr  7 22:25 01-texec.png
--rw-r--r--@ 1 user  staff   7505 Apr  7 22:25 02-speedup.png
--rw-r--r--@ 1 user  staff   8924 Apr  7 22:25 03-eficiencia.png
--rwxr--r--@ 1 user  staff   2273 Apr  7 22:25 flores-delcampo-zacarias.plt
-drwxr-xr-x@ 7 user  staff    224 Apr  7 21:43 experiments-data
+$ cd entregas
+$ tar xf tarea2-Flores-Delcampo-Zacarias.tar
+$ cd tarea2-Apellido1-Apellido2-Nombre/
+-rw-r--r--@ 1 user  staff  17163 Apr  7 22:25 Makefile
+-rw-r--r--@ 1 user  staff   7505 Apr  7 22:25 mult.cc
+-rw-r--r--@ 1 user  staff   8924 Apr  7 22:25 include/
 ```
 
-Cada gráfico después de revisa en forma individual para evaluar su cercanía al gráfico solicitado.
 
