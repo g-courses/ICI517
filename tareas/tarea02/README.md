@@ -1,6 +1,6 @@
 # Impacto del uso de la memoria cache en la multiplicación de matrices
 
-El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices. Se utilizarán conjuntos de matrices cuadradas de distinto tamaño para evaluar los tiempo de ejecución.
+El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices. Se utilizarán conjuntos de matrices *cuadradas* de distinto tamaño para evaluar los tiempo de ejecución.
 
 ## Plazo
 
@@ -54,11 +54,11 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 1) Implementar el método ijk y kij. Esto se realizará a través de un objeto denominado MultMatrix que tiene por lo menos los siguientes métodos públicos:
 
 * ```MultMatrix()```: Constructor vacío.
-* ```load(const Matrix& A, const Matrix& B)``` : pasa las referencias de las matrices A y B previamente cargadas desde archivo.
-* ```DOijk(Matrix& C)```: Ejecuta el algorimo ijk y almacena el resultado en la matric C.
-* ```DOkij(Matrix& C)```: Ejecuta el algorimo kij y almacena el resultado en la matric C.
+* ```load(const Matrix& A, const Matrix& B, Matrix& C)``` : pasa las referencias de las matrices A y B previamente cargadas desde archivo. La matriz C almacenerá el resultado de la operación.
+* ```DOijk()```: Ejecuta el algorimo ijk y almacena el resultado en la matriz C.
+* ```DOkij()```: Ejecuta el algorimo kij y almacena el resultado en la matriz C.
 
-2) 
+2) Debe ejecutar por lo menos 30 experimentos por cada tamaño de matriz. Si S es el conjunto de tamaños de matriz a probar, S podría ser S={10x10, 50x50, 100x100, 500x500, 1000x1000, 5000x5000, 10000x10000, ..., 1000000}. Deberá calcular promedio y desviación estándar de los tiempos de ejecución de cada algoritmo por cada tamaño de matrix y mostrarlos en un gráfico.
 
 
 ## Entregables
