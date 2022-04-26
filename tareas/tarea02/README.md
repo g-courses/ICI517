@@ -60,7 +60,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 * ```DOijk()```: Ejecuta el algorimo ijk y almacena el resultado en la matriz C.
 * ```DOkij()```: Ejecuta el algorimo kij y almacena el resultado en la matriz C.
 
-2) Debe ejecutar por lo menos 30 experimentos por cada tamaño de matriz. Si S es el conjunto de tamaños de matriz a probar, S podría ser S={10x10, 50x50, 100x100, 500x500, 1000x1000, 5000x5000, 10000x10000, ..., 1000000}. Deberá calcular promedio y desviación estándar de los tiempos de ejecución de cada algoritmo por cada tamaño de matrix y mostrarlos en un gráfico.
+2) Debe ejecutar por lo menos 30 experimentos por cada tamaño de matriz. Si S es el conjunto de tamaños de matriz a probar, S podría ser S={10x10, 50x50, 100x100, 500x500, 1000x1000, 5000x5000, 10000x10000, ...}. Los tamaños utilizados y su cantidad lo establecerá cada estudiante, debiendo justificar su elección. Deberá calcular promedio y desviación estándar de los tiempos de ejecución de cada algoritmo por cada tamaño de matrix y mostrarlos en un gráfico.
 
 
 ## Entregables
