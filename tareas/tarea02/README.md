@@ -44,7 +44,7 @@ En el directorio ```skel/base``` están los archivos que debe utilizar para inic
 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
 * ```include/``` : Bibliotecas no estándar utilizadas..
-* ```mult.cc``` : Archivo fuente principal que debe modificar. 
+* ```main.cc``` : Archivo fuente principal que debe modificar. 
 * ```MultMatrix.cc``` : Archivo fuente de implementación del objeto MultMatrix. 
 * ```MultMatrix.hh``` : Archivo fuente de declaración del objeto MultMatrix. 
 
@@ -64,7 +64,12 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 
 ## Entregables
 
-Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD] Tarea #2 - Apellido1-Apellido2-Nombre```* y debe adjuntar el informe y un archivo ```tar.gz``` que contengo el directorio de trabajo con sus respectivos . Sólo se recepcionarán correos que cumplan con este requisito.
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD] Tarea #2 - Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. Debe adjuntar el informe y un archivo ```tar.gz``` que contengo el directorio de trabajo con sus respectivos archivos. El archivo ```tar.gz``` debe ser creado **después** de ejecutar ```make distclean``` en el directorio respectivo. 
+
+Además debe incluir el script BASH que utilizó para realizar los experimentos, que se debe llamar ```run_experiments```. La forma de uso de ese script es:
+
+```./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>```
+
  
 ## Forma de corregir
 
@@ -74,9 +79,23 @@ Cada script se ejecutará en consola, en el directorio ```code```, donde se veri
 $ cd entregas
 $ tar xf tarea2-Flores-Delcampo-Zacarias.tar
 $ cd tarea2-Apellido1-Apellido2-Nombre/
--rw-r--r--@ 1 user  staff  17163 Apr  7 22:25 Makefile
--rw-r--r--@ 1 user  staff   7505 Apr  7 22:25 mult.cc
--rw-r--r--@ 1 user  staff   8924 Apr  7 22:25 include/
+-rw-r--r--@ 1 user  staff   758 Apr 26 00:37 Makefile
+-rw-r--r--@ 1 user  staff   473 Apr 26 00:18 MultMatrix.cc
+-rw-r--r--@ 1 user  staff   347 Apr 26 00:14 MultMatrix.hh
+drwxr-xr-x@ 6 user  staff   192 Apr 26 00:30 include
+-rw-r--r--@ 1 user  staff  1416 Apr 26 00:35 main.cc
+-rwxr-xr-x@ 1 user  staff  1416 Apr 26 00:35 run_experiments.sh
+$ make clean && make
+$ ./mult --A <ruta_al_archivo_de_datos>
+rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+$./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>
+rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+...
+rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+$
+
 ```
 
 
