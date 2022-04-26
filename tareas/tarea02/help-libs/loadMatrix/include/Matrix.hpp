@@ -10,14 +10,21 @@
 //                desde el archivo 'fileName'
 //                a memoria principal (variable 'varName')
 //
-//   Atributos públicos:
+//   Atributos privados:
 //	             _nfil, _ncol   : filas, columnas de datos de la matriz
 //               _matrixInMemory: matriz en memoria.
+//
+//   Atributos públicos:
+//               Matrix(nfil,  ncol)        : crea una matriz vacía de nfil x ncol
+//               Matrix(fileName, separador): crea una matriz con los datos del archivo 'fileName'. Los datos
+//                                            de la matriz están separados por el caracter 'separador'
 //               operador ()    : sobrecargado para acceder a los datos de la matriz (i,j)
+//               rows()         : devuelva la cantidad de filas de la matriz.
+//               cols()         : devuelva la cantidad de columnas de la matriz.
 //               value(i,j)     : devuelve el elmente i,j
 //               value(i,j, val): asigna el valor val al elemento i,j
 //
-//  Última revisión: 2021-08-22
+//  Última revisión: 2022-03-23
 //
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -44,8 +51,6 @@ private:
 	std::string _fileName;
 	
 	T *_matrixInMemory;
-	
-public:
 	uint32_t _nfil, _ncol;
 	
 	
