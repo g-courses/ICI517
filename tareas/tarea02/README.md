@@ -40,7 +40,7 @@ for(size_t k=0; k < columnas(a); k++){
 }
 ```
 
-En el directorio ```skel/base``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
+En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
 * ```include/``` : Bibliotecas no estándar utilizadas..
