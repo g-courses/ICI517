@@ -44,7 +44,9 @@ En el directorio ```skel/base``` están los archivos que debe utilizar para inic
 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
 * ```include/``` : Bibliotecas no estándar utilizadas..
-* ```mult.cc``` : Archivo fuente que debe modificar. 
+* ```mult.cc``` : Archivo fuente principal que debe modificar. 
+* ```MultMatrix.cc``` : Archivo fuente de implementación del objeto MultMatrix. 
+* ```MultMatrix.hh``` : Archivo fuente de declaración del objeto MultMatrix. 
 
 Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
 
