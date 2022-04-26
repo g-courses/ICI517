@@ -88,7 +88,7 @@ drwxr-xr-x@ 6 user  staff   192 Apr 26 00:30 include
 $ make clean && make
 $ ./mult --A <ruta_al_archivo_de_datos>
 rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
-$./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>
+$ ./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>
 rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
 rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
 rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
