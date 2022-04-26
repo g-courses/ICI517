@@ -1,6 +1,6 @@
 # Impacto del uso de la memoria cache en la multiplicación de matrices
 
-El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices.
+El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar el tiempo de ejecución de un algoritmo. En particular, se utilizarán dos algoritmos clásicos de multiplicación de matrices. Se utilizarán conjuntos de matrices cuadradas de distinto tamaño para evaluar los tiempo de ejecución.
 
 ## Plazo
 
@@ -50,6 +50,15 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 
 
 ## Descripción del trabajo a realizar
+
+1) Implementar el método ijk y kij. Esto se realizará a través de un objeto denominado MultMatrix que tiene por lo menos los siguientes métodos públicos:
+
+* ```MultMatrix()```: Constructor vacío.
+* ```load(const Matrix& A, const Matrix& B)``` : pasa las referencias de las matrices A y B previamente cargadas desde archivo.
+* ```DOijk(Matrix& C)```: Ejecuta el algorimo ijk y almacena el resultado en la matric C.
+* ```DOkij(Matrix& C)```: Ejecuta el algorimo kij y almacena el resultado en la matric C.
+
+2) 
 
 
 ## Entregables
