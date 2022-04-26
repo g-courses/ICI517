@@ -47,8 +47,8 @@ int main(int argc, char** argv)
 	
 	std::cout << "Time to load matrix in memory: " << timer1.elapsed() << " ns\n";
 	
-	for(size_t i=0; i< m1._nfil; i++){
-		for(size_t j=0; j< m1._ncol; j++){
+	for(size_t i=0; i< m1.rows(); i++){
+		for(size_t j=0; j< m1.cols(); j++){
 			std::cout << m1(i,j) << "\t";
 		}
 		std::cout << std::endl;
