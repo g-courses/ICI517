@@ -66,7 +66,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-A
 
 ## Entregables
 
-Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD]Tarea#2-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. Debe adjuntar el informe y un archivo ```tar.gz``` que contengo el directorio de trabajo con sus respectivos archivos. El archivo ```tar.gz``` debe ser creado **después** de ejecutar ```make distclean``` en el directorio respectivo. 
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea2-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que la tarea 1, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD]Tarea#2-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. Debe adjuntar el informe y un archivo ```tar.gz``` que contenga el directorio de trabajo con sus respectivos archivos. El archivo ```tar.gz``` debe ser creado **después** de ejecutar ```make distclean``` en el directorio respectivo. 
 
 Además debe incluir el script BASH que utilizó para realizar los experimentos, que se debe llamar ```run_experiments```. La forma de uso de ese script es:
 
@@ -75,7 +75,7 @@ Además debe incluir el script BASH que utilizó para realizar los experimentos,
  
 ## Forma de corregir
 
-Cada script se ejecutará en consola, en el directorio ```code```, donde se verificará la creación de los tres gráficos solicitados. Ejemplo:
+Cada script se ejecutará en consola, en el servidor de la asignatura, en el directorio ```code```, donde se verificará el funcionamiento de su programa y la validez de los datos utlizados en su informe. Ejemplo:
 
 ```
 $ cd entregas
