@@ -1,4 +1,4 @@
-TARGET=load-store
+TARGET=shuffle-example
 
 DEBUG=-DDEBUG
 DEBUG=
