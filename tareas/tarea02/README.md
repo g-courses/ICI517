@@ -4,7 +4,7 @@ El objetivo de la tarea evaluar cómo el uso de la memoria cache puede acelarar 
 
 ## Plazo
 
-~~Miércoles 11 de Mayo, 18:00 horas~~. Viernes 20 de Mayo, 180:00. Ver condiciones de entrega en la sección **Entregables**.
+~~Miércoles 11 de Mayo, 18:00 horas~~. Viernes 20 de Mayo, 18:00. Ver condiciones de entrega en la sección **Entregables**.
 
 ## Antecedentes
 
