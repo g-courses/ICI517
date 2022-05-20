@@ -64,8 +64,8 @@ public:
 	 T value(uint32_t id_i, uint32_t id_j) const;
 	void value(uint32_t id_i, uint32_t id_j, T val);
 	
-	uint32_t rows() {return _nfil;}
-	uint32_t cols() {return _ncol;}
+	uint32_t rows() const {return _nfil;}
+	uint32_t cols() const {return _ncol;}
 	
 	
 private:
