@@ -60,12 +60,12 @@ public:
 	~Matrix();
 	
 	void load();
-	T operator()(uint32_t id_i, uint32_t id_j);
-	T value(uint32_t id_i, uint32_t id_j);
+	 T operator()(uint32_t id_i, uint32_t id_j) const;
+	 T value(uint32_t id_i, uint32_t id_j) const;
 	void value(uint32_t id_i, uint32_t id_j, T val);
 	
-	uint32_t rows() {return _nfil;}
-	uint32_t cols() {return _ncol;}
+	uint32_t rows() const {return _nfil;}
+	uint32_t cols() const {return _ncol;}
 	
 	
 private:
@@ -147,13 +147,13 @@ void Matrix<T>::loadInMemory()
 }
 
 template <typename T>
-T Matrix<T>::operator()(uint32_t id_i, uint32_t id_j)
+T Matrix<T>::operator()(uint32_t id_i, uint32_t id_j) const
 {
 	return(_matrixInMemory[id_i*_ncol + id_j]);
 }
 
 template <typename T>
-T Matrix<T>::value(uint32_t id_i, uint32_t id_j)
+T Matrix<T>::value(uint32_t id_i, uint32_t id_j) const
 {
 	return(_matrixInMemory[id_i*_ncol + id_j]);
 }
