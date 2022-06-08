@@ -10,11 +10,13 @@ Viernes 8 de Julio, 18:00. Ver condiciones de entrega en la sección **Entregabl
 
 ### Formato PGM
 
-En esta tarea, se utilizará imágenes del tipo Portable GrayMap ([PGM](https://en.wikipedia.org/wiki/Netpbm_format)), principalmente porque el algoritmo para leer y crear este tipo de imágenes es sencillo. Las imágenes a utilizar se encuentran disponible en [este directorio](https://github.com/g-courses/ICI517/tree/main/tareas/tarea04/base/data). Si se quiere utilizar otras imágenes, debe convertir una imagen (jpg, png) con el comando ```convert``` (disponible en Linux con el software ImageMagick) de la siguiente forma:
+En esta tarea, se utilizará imágenes del tipo Portable GrayMap ([PGM](https://en.wikipedia.org/wiki/Netpbm_format)), principalmente porque el algoritmo para leer y crear este tipo de imágenes es sencillo. Las imágenes a utilizar se encuentran disponible en [este directorio](https://github.com/g-courses/ICI517/tree/main/tareas/tarea04/base/data). En el servidor, están sin comprimir en el directorio ```/opt/tareas/tarea04/base/data```. Si se quiere utilizar otras imágenes, debe convertir una imagen (jpg, png) con el comando ```convert``` (disponible en Linux con el software ImageMagick) de la siguiente forma:
 
 ```
 convert -compress none inputImage.png outputImage.pgm
 ```
+
+**Observación**: La mayoría de las herramientas de conversión en línea utilizan datos binarios para los valores de los pixeles, por lo que no sirven para esta tarea.
 
 Cada imagen PGM consta de lo siguiente:
 
