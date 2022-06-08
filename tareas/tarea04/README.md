@@ -92,7 +92,7 @@ se transforma en:
 68 68 68 68 72 72 72 72
 68 68 68 68 72 72 72 72
 ```
-, donde 28 es el promedio redondeado de la ventana de 4x4 superior izquierda. Para esta tarea, se utilizarán ventanas de la forma $2^k \times 2^k$, con $k \in \left{1, 2, \dots, \right}$
+, donde 28 es el promedio redondeado de la ventana de 4x4 superior izquierda. Para esta tarea, se utilizarán ventanas de la forma $2^k \times 2^k$, con $k \in {{1, 2, \dots, }}$
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/pixelated.png?raw=true)
 
