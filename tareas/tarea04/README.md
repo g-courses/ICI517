@@ -116,8 +116,8 @@ En el directorio ```base/``` están los archivos que debe utilizar para iniciar 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
 * ```include/``` : Bibliotecas no estándar utilizadas..
 * ```main.cc``` : Archivo fuente principal que debe modificar. 
-* ```PGM.cc``` : Archivo fuente de implementación de los métodos adicionales del objeto PGM. 
-* ```PGM.hh``` : Archivo fuente de declaración e implementación de los métodos base del objeto PGM. 
+* ```PGM.cc``` : Archivo fuente de implementación de los métodos adicionales de la clase PGM. 
+* ```PGM.hh``` : Archivo fuente de declaración e implementación de los métodos base de la clase PGM. Este clase es derivada de la clase Matrix, utilizada en tareas anteriores.
 * ```run_experiments.sh``` : Script BASH para realizar los experimentos.
 
 Estos archivos se deben copiar en un directorio denominado ```tarea4-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
