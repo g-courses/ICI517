@@ -133,7 +133,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea4-Apellido1-A
 * void PGM::pixelate(uint32_t sizeWindow);
 * void PGM::hEdges();
 
-2) Implementar los métodos paralelos de procesamiento:
+2) Implementar los métodos paralelos de procesamiento con OpenMP:
 
 * void PGM::invertMP();
 * void PGM::pixelateMP(uint32_t sizeWindow);
