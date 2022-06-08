@@ -20,7 +20,7 @@ convert -compress none inputImage.png outputImage.pgm
 
 Cada imagen PGM consta de lo siguiente:
 
-* Un "número mágico" para identificar el tipo de archivo. El número mágico de una imagen pgm son los dos caracteres "P2".
+* Un "número mágico", consistente en los primeros 16 bits, para identificar el tipo de archivo. El número mágico de una imagen pgm son dos caracteres ```P2```.
 * Salto de línea.
 * Un número que representa la cantidad de columnas que tiene la imagen.
 * Espacio en blanco.
