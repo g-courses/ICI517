@@ -46,6 +46,23 @@ P2
 ![](https://raw.githubusercontent.com/g-courses/ICI517/eea2d7adcd88e1013975040ffa13acc085bb986c/tareas/tarea04/content/feep.png)
 
 
+### Descripción de los algoritmos de procesamiento de imágenes a utilizar
+
+**Invertir escala de grises de la imagen**
+
+Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para invertir la escala de grises de la imagen, se debe realizar el siguiente mapeo:
+
+```
+0 → 255 
+1 → 254 
+2 → 253
+...
+254 → 1 
+255 → 0
+```
+
+
+
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
