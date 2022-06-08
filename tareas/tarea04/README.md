@@ -96,7 +96,7 @@ se transforma en:
 
 **(3) Detectar bordes horizontales**
 
-Para detectar los bordes, se utiliza una técnica de procesamiento de imágenes que consiste en utlizar una ventana deslizante correspodiente a la vecindad de Moore de un píxel determinado.
+Para detectar los bordes, se utiliza una técnica de procesamiento de imágenes que consiste en utlizar una ventana deslizante correspodiente a la vecindad de Moore de un píxel determinado $p_{i,j}$.
 
 
 $$p_{i-1,j-1}~~~~p_{i-1,j}~~~p_{i-1,j+1}$$
@@ -104,6 +104,8 @@ $$p_{i-1,j-1}~~~~p_{i-1,j}~~~p_{i-1,j+1}$$
 $$p_{i,j-1}~~~~p_{i,j}~~~p_{i,j+1}$$
 
 $$p_{i+1,j-1}~~~~p_{i+1,j}~~~p_{i+1,j+1}$$
+
+El valor del pixel (i,j) queda determinado como $p_{i,j} = (p_{i+1,j-1} + 2\cdot p_{i+1,j} + p_{i+1,j+1}) - (p_{i-1,j-1} + 2 \cdot p_{i-1,j} + p_{i-1,j+1})$
 
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
