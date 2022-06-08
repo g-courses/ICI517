@@ -1,6 +1,6 @@
 # Programación paralela con OpenMP
 
-El objetivo de la tarea evaluar cómo el uso de paralelización en memoria compartida puede acelarar el tiempo de ejecución de un algoritmo. En particular, se implementarán tres algoritmos de procesamiento de imágenes en su versión secuencial y paralela para evaluar el desempeño según la cantidad de procesadores lógicos utilizados.
+El objetivo de la tarea evaluar cómo el uso de paralelización en memoria compartida puede acelerar el tiempo de ejecución de un algoritmo. En particular, se implementarán tres algoritmos de procesamiento de imágenes en su versión secuencial y paralela para evaluar el desempeño según la cantidad de procesadores lógicos utilizados.
 
 ## Plazo
 
