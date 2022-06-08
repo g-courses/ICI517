@@ -48,7 +48,7 @@ P2
 
 ### Descripción de los algoritmos de procesamiento de imágenes a utilizar
 
-**(1)Invertir escala de grises de la imagen**
+**(1) Invertir escala de grises de la imagen**
 
 Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para invertir la escala de grises de la imagen, se debe realizar el siguiente mapeo:
 
@@ -93,6 +93,14 @@ se transforma en:
 , donde 28 es el promedio redondeado de la ventana de 4x4 superior izquierda.
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/pixelated.png?raw=true)
+
+**(3) Detectar bordes horizontales**
+
+Para detectar los bordes, se utiliza una técnica de procesamiento de imágenes que consiste en utlizar una ventana deslizante correspodiente a la vecindad de Moore de un píxel determinado.
+
+```
+$h_1$
+```
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
 
