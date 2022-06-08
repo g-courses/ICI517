@@ -105,7 +105,7 @@ $$p_{i,j-1}~~~~p_{i,j}~~~p_{i,j+1}$$
 
 $$p_{i+1,j-1}~~~~p_{i+1,j}~~~p_{i+1,j+1}$$
 
-El valor del pixel (i,j) queda determinado como $p_{i,j} = (p_{i+1,j-1} + 2\cdot p_{i+1,j} + p_{i+1,j+1}) - (p_{i-1,j-1} + 2 \cdot p_{i-1,j} + p_{i-1,j+1})$. Si $p_{i,j} < 0 \Rightarrow $p_{i,j}$ = 0$. Si $p_{i,j} > 255 \Rightarrow $p_{i,j}$ = 255$. 
+El valor del pixel (i,j) queda determinado como $p_{i,j} = (p_{i+1,j-1} + 2\cdot p_{i+1,j} + p_{i+1,j+1}) - (p_{i-1,j-1} + 2 \cdot p_{i-1,j} + p_{i-1,j+1})$. Si $p_{i,j} < 0 \Rightarrow p_{i,j} = 0$. Si $p_{i,j} > 255 \Rightarrow p_{i,j} = 255$. 
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/horiz_edges.png?raw=true)
 
