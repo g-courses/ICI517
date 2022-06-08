@@ -43,7 +43,7 @@ P2
 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
 ```
 
-![](https://raw.githubusercontent.com/g-courses/ICI517/eea2d7adcd88e1013975040ffa13acc085bb986c/tareas/tarea04/content/feep.png)
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/feep.png?raw=true)
 
 
 ### Descripción de los algoritmos de procesamiento de imágenes a utilizar
@@ -61,6 +61,7 @@ Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para 
 255 → 0
 ```
 
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/inverted.png?raw=true)
 
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
