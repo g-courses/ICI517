@@ -50,7 +50,7 @@ P2
 
 **(1) Invertir escala de grises de la imagen**
 
-Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para invertir la escala de grises de la imagen, se debe realizar el siguiente mapeo:
+Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para invertir la escala de grises de la imagen, se debe realizar el siguiente mapeo por cada píxel de la imagen:
 
 ```
 0 → 255 
@@ -65,7 +65,7 @@ Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para 
 
 **(2) Pixelar**
 
-Una forma de pixelar una imagen es hacer sub-matrices **no superpuestas** de tamaño ```n x n```. Estas sub-matrices se denominan *ventanas*. Para pixelar la imagen, cada pixel de esta ventana se debe sobreescribir con el valor promedio de todos los píxeles de esa ventana. Por ejemplo, si en siguiente imagen se pixela con una ventana de 4x4:
+Una forma de pixelar una imagen es hacer sub-matrices **no superpuestas** de tamaño ```n x n```. Estas sub-matrices se denominan *ventanas*. Para pixelar la imagen, cada pixel de esta ventana se debe sobreescribir con el valor promedio de todos los píxeles de esa ventana. Por ejemplo, si la siguiente imagen se pixela con una ventana de 4x4:
 
 ```
 11 12 13 14 15 16 17 18
