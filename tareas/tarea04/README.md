@@ -24,9 +24,9 @@ Cada imagen PGM consta de lo siguiente:
 * Espacio en blanco.
 * Un número que representa la cantidad de filas que tiene la imagen.
 * Salto de línea.
-* El valor máximo de gris (maxGreyValue). Para los fines de la tarea, debe ser un número entero sin signo de 8 bits.
+* El valor máximo de gris (```maxGreyValue```). Para los fines de la tarea, debe ser un número entero sin signo de 8 bits, por lo que ```0≤maxGreyValue≤255```.
 * Salto de línea.
-* Un matriz con los datos de intensidad de gris de la imagen. Cada fila consta de números que representan la intensidad de gris de cada píxel, en orden de izquierda a derecha. Cada valor gris es un número de 0 a maxGreyValue, siendo 0 negro y maxGreyValue blanco.
+* Un matriz con los datos de intensidad de gris de la imagen. Cada fila consta de números que representan la intensidad de gris de cada píxel, en orden de izquierda a derecha. Cada valor gris es un número de 0 a ```maxGreyValue```, siendo 0 negro y ```maxGreyValue``` blanco.
 
 Ejemplo de imagen PGM ([fuente](http://netpbm.sourceforge.net/doc/pgm.html))
 
