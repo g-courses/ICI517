@@ -142,9 +142,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea4-Apellido1-A
 
 ## Entregables
 
-Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea4-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que las anteriores, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD]Tarea#4-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. Debe adjuntar el informe y un archivo ```tar.gz``` que contenga el directorio de trabajo con sus respectivos archivos. El archivo ```tar.gz``` debe ser creado **después** de ejecutar ```make distclean``` en el directorio respectivo. 
-
-Recuerde que el directorio enviardo debe incluir el script BASH que utilizó para realizar los experimentos, el que se debe llamar ```run_experiments```. La forma de uso de ese script debe estar explicado en el diseño de los experimentos.
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea4-Apellido1-Apellido2-Nombre.pdf```. Este informe deberá ser enviado por correo, cuyo título **debe** ser : *```[ICI517-PAD]Tarea#4-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. El código de la tarea será entregado en el servidor. Una vez que haya terminado su trabajo, debe enviar su trabajo con el comando ```make submit```.
  
 ## Forma de corregir
 
