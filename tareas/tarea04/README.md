@@ -51,33 +51,35 @@ En el directorio ```base/``` están los archivos que debe utilizar para iniciar 
 * ```Makefile``` : Archivo para generar el ejecutable. Debe modificarlo según las indicaciones en el interior de él.
 * ```include/``` : Bibliotecas no estándar utilizadas..
 * ```main.cc``` : Archivo fuente principal que debe modificar. 
-* ```MultMatrix.cc``` : Archivo fuente de implementación del objeto MultMatrix. 
-* ```MultMatrix.hh``` : Archivo fuente de declaración del objeto MultMatrix. 
+* ```PGM.cc``` : Archivo fuente de implementación de los métodos adicionales del objeto PGM. 
+* ```PGM.hh``` : Archivo fuente de declaración e implementación de los métodos base del objeto PGM. 
 * ```run_experiments.sh``` : Script BASH para realizar los experimentos.
-* ```make_graphs.plt``` : Script GnuPLot para generar los gráficos de desempeño y comparación.
 
-Estos archivos se deben copiar en un directorio denominado ```tarea2-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
+Estos archivos se deben copiar en un directorio denominado ```tarea4-Apellido1-Apellido2-Nombre/```, el que debe ser entregado en formato ```tar.gz``` según las indicaciones de la sección **Entregables**.
 
 
 ## Descripción del trabajo a realizar
 
-1) Implementar el método ijk y kij. Esto se realizará a través de un objeto denominado MultMatrix que tiene por lo menos los siguientes métodos públicos:
+1) Implementar los métodos secuenciales de procesamiento:
 
-* ```MultMatrix()```: Constructor vacío.
-* ```DOijk(const Matrix& A, const Matrix& B, Matrix& C)```: Multiplica A y B con el algoritmo ijk y almacena el resultado en la matriz C.
-* ```DOkij(const Matrix& A, const Matrix& B, Matrix& C)```: Multiplica A y B con el algoritmo kij y almacena el resultado en la matriz C.
+* void PGM::invert();
+* void PGM::pixelate(uint32_t sizeWindow);
+* void PGM::hEdges();
 
-2) Debe ejecutar por lo menos 30 experimentos por cada tamaño de matriz. Si S es el conjunto de tamaños de matriz a probar, S podría ser S={10x10, 50x50, 100x100, 500x500, 1000x1000, 5000x5000, 10000x10000, ...}. Los tamaños utilizados y su cantidad lo establecerá cada estudiante, debiendo justificar su elección. Deberá calcular promedio y desviación estándar de los tiempos de ejecución de cada algoritmo por cada tamaño de matrix y mostrarlos en un gráfico.
+2) Implementar los métodos paralelos de procesamiento:
+
+* void PGM::invertMP();
+* void PGM::pixelateMP(uint32_t sizeWindow);
+* void PGM::hEdgesMP();
+
+3) Debe diseñar los experimentos que permitan medir el desempeño de métods paralelos, en base a métricas como SpeedUp y Eficiencia Paralela.
 
 
 ## Entregables
 
 Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea4-Apellido1-Apellido2-Nombre.pdf```. **Aviso**: Al igual que las anteriores, esta tarea se entregará por correo. El título del correo **debe** ser : *```[ICI517-PAD]Tarea#4-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. Debe adjuntar el informe y un archivo ```tar.gz``` que contenga el directorio de trabajo con sus respectivos archivos. El archivo ```tar.gz``` debe ser creado **después** de ejecutar ```make distclean``` en el directorio respectivo. 
 
-Recuerde que el directorio enviardo debe incluir el script BASH que utilizó para realizar los experimentos, el que se debe llamar ```run_experiments```. La forma de uso de ese script es:
-
-```./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>```
-
+Recuerde que el directorio enviardo debe incluir el script BASH que utilizó para realizar los experimentos, el que se debe llamar ```run_experiments```. La forma de uso de ese script debe estar explicado en el diseño de los experimentos.
  
 ## Forma de corregir
 
@@ -86,22 +88,18 @@ Cada script se ejecutará en consola, en el servidor de la asignatura, en el dir
 ```
 $ cd entregas
 $ tar xf tarea2-Flores-Delcampo-Zacarias.tar
-$ cd tarea2-Apellido1-Apellido2-Nombre/
+$ cd tarea4-Apellido1-Apellido2-Nombre/
 -rw-r--r--@ 1 user  staff   758 Apr 26 00:37 Makefile
--rw-r--r--@ 1 user  staff   473 Apr 26 00:18 MultMatrix.cc
--rw-r--r--@ 1 user  staff   347 Apr 26 00:14 MultMatrix.hh
+-rw-r--r--@ 1 user  staff   473 Apr 26 00:18 PGM.cc
+-rw-r--r--@ 1 user  staff   347 Apr 26 00:14 PGM.hh
 drwxr-xr-x@ 6 user  staff   192 Apr 26 00:30 include
 -rw-r--r--@ 1 user  staff  1416 Apr 26 00:35 main.cc
 -rwxr-xr-x@ 1 user  staff  1416 Apr 26 00:35 run_experiments.sh
 $ make clean && make
-$ ./mult --A <ruta_al_archivo_de_datos>
-rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
-$ ./run_experiments --matrix <ruta_al_archivo_de_datos> --repeticiones <nro>
-rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
-rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
-rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
-...
-rowsxcols:time_ijk:time_kij #<-- nros dependen de la ejecución
+$ ./pgm -i <ruta_al_archivo_de_imagen> -t <nro de threads>
+rowsxcols:threads:time_inv:time_pix:time_edges #<-- nros dependen de la ejecución
+$ ./run_experiments --imagen <ruta_al_archivo_de_imagen> --repeticiones <nro>
+.... #<-- nros dependen de la ejecución
 $
 
 ```
