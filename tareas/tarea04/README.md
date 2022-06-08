@@ -99,9 +99,9 @@ se transforma en:
 Para detectar los bordes, se utiliza una técnica de procesamiento de imágenes que consiste en utlizar una ventana deslizante correspodiente a la vecindad de Moore de un píxel determinado.
 
 
-$$p_{i-1,j-1}  p_{i-1,j}  p_{i-1,j+1}$$
+$$p_{i-1,j-1}~~~~p_{i-1,j}~~~p_{i-1,j+1}$$
 ```
-p<sub>i,j-1</sub>  p<sub>i,j</sub>  p<sub>i,j+1</sub>
+p<sub>i,j-1</sub>~~~p<sub>i,j</sub>  p<sub>i,j+1</sub>
 p<sub>i+1,j-1</sub>  p<sub>i+1,j</sub>  p<sub>i+1,j+1</sub>
 ```
 
