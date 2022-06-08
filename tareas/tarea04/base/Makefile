@@ -44,11 +44,12 @@ $(DIR_OBJ)/%.o: %.cc
 clean:
 	@$(RM) core *~ \#*\# *.bak *.BAK *\%
 	@$(RM) -f .dummy $(OBJECTS)
+	@$(RM) -rf $(DIR_OBJ)
 
-distclean:
+distclean: clean
 	@$(RM) $(TARGET)
 
-submit: clean distclean
+submit: distclean
 	@echo "deleting old $(DIR_SUBMIT) content ..."
 	@$(RM) -rf $(DIR_SUBMIT)
 	@echo "submitting homework to $(DIR_SUBMIT) ..."
