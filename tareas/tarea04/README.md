@@ -99,7 +99,9 @@ se transforma en:
 Para detectar los bordes, se utiliza una técnica de procesamiento de imágenes que consiste en utlizar una ventana deslizante correspodiente a la vecindad de Moore de un píxel determinado.
 
 ```
-$h_1$
+p<sub>i-1,j-1</sub>  p<sub>i-1,j</sub>  p<sub>i-1,j+1</sub>
+p<sub>i,j-1</sub>  p<sub>i,j</sub>  p<sub>i,j+1</sub>
+p<sub>i+1,j-1</sub>  p<sub>i+1,j</sub>  p<sub>i+1,j+1</sub>
 ```
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
