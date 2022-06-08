@@ -43,7 +43,7 @@ P2
 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
 ```
 
-![](https://github.com/g-courses/ICI517/tree/main/tareas/tarea04/base/content/feep.jpg)
+![](https://raw.githubusercontent.com/g-courses/ICI517/eea2d7adcd88e1013975040ffa13acc085bb986c/tareas/tarea04/content/feep.png)
 
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
