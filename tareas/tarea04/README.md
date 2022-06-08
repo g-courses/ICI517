@@ -48,7 +48,7 @@ P2
 
 ### Descripción de los algoritmos de procesamiento de imágenes a utilizar
 
-**Invertir escala de grises de la imagen**
+**(1)Invertir escala de grises de la imagen**
 
 Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para invertir la escala de grises de la imagen, se debe realizar el siguiente mapeo:
 
@@ -63,6 +63,36 @@ Debido a que según el formato PGM, el color negro = 0 y el  blanco = 255, para 
 
 ![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/inverted.png?raw=true)
 
+**(2) Pixelar**
+
+Una forma de pixelar una imagen es hacer sub-matrices **no superpuestas** de tamaño ```n x n```. Estas sub-matrices se denominan *ventanas*. Para pixelar la imagen, cada pixel de esta ventana se debe sobreescribir con el valor promedio de todos los píxeles de esa ventana. Por ejemplo, si en siguiente imagen se pixela con una ventana de 4x4:
+
+```
+11 12 13 14 15 16 17 18
+21 22 23 24 25 26 27 28
+31 32 33 34 35 36 37 38
+41 42 43 44 45 46 47 48
+51 52 53 54 55 56 57 58
+61 62 63 64 65 66 67 68
+71 72 73 74 75 76 77 78
+81 82 83 84 85 86 87 88
+```
+
+se transforma en:
+
+```
+28 28 28 28 32 32 32 32
+28 28 28 28 32 32 32 32
+28 28 28 28 32 32 32 32
+28 28 28 28 32 32 32 32
+68 68 68 68 72 72 72 72
+68 68 68 68 72 72 72 72
+68 68 68 68 72 72 72 72
+68 68 68 68 72 72 72 72
+```
+, donde 28 es el promedio redondeado de la ventana de 4x4 superior izquierda.
+
+![](https://github.com/g-courses/ICI517/blob/main/tareas/tarea04/content/pixelated.png?raw=true)
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
 
