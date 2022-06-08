@@ -107,6 +107,7 @@ $$p_{i+1,j-1}~~~~p_{i+1,j}~~~p_{i+1,j+1}$$
 
 El valor del pixel (i,j) queda determinado como $p_{i,j} = (p_{i+1,j-1} + 2\cdot p_{i+1,j} + p_{i+1,j+1}) - (p_{i-1,j-1} + 2 \cdot p_{i-1,j} + p_{i-1,j+1})$
 
+### Descripción de la estructura de directorios a utilizar
 
 En el directorio ```base/``` están los archivos que debe utilizar para iniciar su tarea. El lenguaje a utilizar es C++17. El contenido de este directorio es:
 
