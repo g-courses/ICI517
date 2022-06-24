@@ -4,7 +4,7 @@ El objetivo de la tarea evaluar cómo el uso de paralelización en memoria compa
 
 ## Plazo
 
-Viernes 8 de Julio, 18:00. Ver condiciones de entrega en la sección **Entregables**.
+~~Viernes 8 de Julio, 18:00~~. Ver condiciones de entrega en la sección **Entregables**.
 
 ## Antecedentes
 
