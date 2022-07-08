@@ -7,7 +7,7 @@ El objetivo de la tarea evaluar cómo el uso de instrucciones SIMD pueden aceler
 
 ## Plazo
 
-~~Miércoles 25 de Mayo, 18:00 horas~~. ~~Viernes 3 de Junio, 18:00 horas~~. ~~Viernes 24 de Junio, 18:00~~. Ver condiciones de entrega en la sección **Entregables**.
+~~Miércoles 25 de Mayo, 18:00 horas~~. ~~Viernes 3 de Junio, 18:00 horas~~. ~~Viernes 24 de Junio, 18:00~~. Viernes 15 de Julio, 18:00Ver condiciones de entrega en la sección **Entregables**.
 
 ## Antecedentes
 
