@@ -11,7 +11,7 @@ Las necesidades de cómputo de numerosas aplicaciones obligan a desarrollar soft
 ## Evaluaciones
 
 * Certamen 1: 20%. Presencial. ~~Viernes 27 de Mayo~~. Viernes 17 de Junio.
-* Certamen 2: 30%. Presencial. ~~Viernes 8 de Julio~~. Viernes 15 de Julio
+* Certamen 2: 30%. Presencial. ~~Viernes 8 de Julio~~. ~~Viernes 15 de Julio~~. Viernes 29 de Julio.
 * [Controles](https://github.com/g-courses/ICI517/tree/main/controles): 20% (presencial/no presencial)
 * [Tareas](https://github.com/g-courses/ICI517/tree/main/tareas): 30% (no presencial)
 
