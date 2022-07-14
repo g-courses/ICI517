@@ -144,7 +144,7 @@ Estos archivos se deben copiar en un directorio denominado ```tarea4-Apellido1-A
 
 ## Entregables
 
-Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea4-Apellido1-Apellido2-Nombre.pdf```. Este informe deberá ser enviado por correo, cuyo título **debe** ser : *```[ICI517-PAD]Tarea#4-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. El código de la tarea será entregado en el servidor. Una vez que haya terminado su trabajo, debe enviar su trabajo con el comando ```make submit```.
+Deberá entregar un informe de su trabajo en formato PDF. Debe utilizar la plantilla entregada. El nombre del documento del informe deberá ser el siguiente: ```tarea4-Apellido1-Apellido2-Nombre.pdf```. Este informe deberá ser enviado por correo, cuyo título **debe** ser : *```[ICI517-PAD]Tarea#4-Apellido1-Apellido2-Nombre```*. Sólo se recepcionarán correos que cumplan con este requisito. El código de la tarea será entregado en el servidor. Una vez que haya terminado su trabajo, debe enviar su trabajo con el comando ```make submit```. Recuerde que en Makefile, debe asignar ```WORK_NAME="tarea4"```.
  
 ## Forma de corregir
 
