@@ -23,9 +23,10 @@ OBJECTS=$(patsubst %.cc,$(DIR_OBJ)/%.o,$(SOURCES))
 INTRINSICS=-msse2 -mavx
 
 INCLUDES =-I. -I./include
-CPPFLAGS =-std=c++17  -Wno-deprecated $(INTRINSICS) 
+CPPFLAGS =-std=c++17  -Wno-deprecated -fopenmp $(INTRINSICS) 
 LDFLAGS =-L/usr/local/lib 
 LDLIBS = -lm -lpthread 
+LDLIBS += -fopenmp
 
 DIR_SUBMIT="/entregas/$(USER)/$(WORK_NAME)"
 
